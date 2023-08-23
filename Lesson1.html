@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rainbow-Colored Online Store</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent horizontal scroll due to animation */
+  }
+  header {
+    background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-size: 1500% 1500%; /* Adjust these values for animation speed */
+    animation: rainbow 10s linear infinite;
+  }
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  nav {
+    background: linear-gradient(to right, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+    padding: 10px;
+    text-align: center;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    max-width: 200px;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .product:hover {
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Welcome to Our Rainbow-Colored Online Store</h1>
+</header>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Products</a>
+  <a href="#">About Us</a>
+  <a href="#">Contact</a>
+</nav>
+<section>
+  <div class="product">
+    <img src="product1.jpg" alt="Product 1">
+    <h2>Product 1</h2>
+    <p>High-quality product description goes here.</p>
+    <p><strong>Price: $19.99</strong></p>
+    <button>Add to Cart</button>
+  </div>
+  <div class="product">
+    <img src="product2.jpg" alt="Product 2">
+    <h2>Product 2</h2>
+    <p>Another great product description.</p>
+    <p><strong>Price: $29.99</strong></p>
+    <button>Add to Cart</button>
+  </div>
+  <!-- Add more products here -->
+</section>
+</body>
+</html>
+
